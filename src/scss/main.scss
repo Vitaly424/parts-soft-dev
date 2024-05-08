@@ -1,0 +1,8 @@
+/* Base */
+@import 'abstracts/mixins';
+@import 'settings/normalize';
+@import 'settings/utils';
+@import 'settings/base';
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/modules/effect-fade';
+@import 'blocks/*';

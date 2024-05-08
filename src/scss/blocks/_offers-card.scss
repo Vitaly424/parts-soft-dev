@@ -1,0 +1,83 @@
+.offers-card {
+  width: 327px;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+
+  @media (width <= 1500px) {
+    width: 335px;
+  }
+
+  @media (width <= 1339px) {
+    width: 315px;
+  }
+
+  @media (width <= 400px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 15px 0 30px;
+
+    @media (width <= 1339px) {
+      padding: 15px 0 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__parameter {
+    font-size: 16px;
+    line-height: 1.5;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  &__price {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__add {
+    height: 40px;
+    padding: 0 38px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    background-color: #F97402;
+    border-radius: 8px;
+    transition: background-color .2s linear;
+
+    @include hover {
+      background-color: #EA7B30FF;
+    }
+  }
+}

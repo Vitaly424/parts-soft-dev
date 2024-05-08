@@ -1,0 +1,51 @@
+.links-header {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  &__cart,
+  &__user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #EA7B30;
+    border-radius: 50%;
+    transition: background-color .2s linear;
+
+    @include hover {
+      background-color: #d3722e;
+    }
+  }
+
+  &__counter {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 21px;
+    height: 21px;
+    color: #000;
+    font-size: 12px;
+    line-height: 1;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  &__back {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
